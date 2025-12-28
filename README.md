@@ -116,6 +116,13 @@ This project uses AI in two ways:
    - See [OPENAI_SETUP.md](OPENAI_SETUP.md) for detailed setup instructions
    - Note: The simulation works without AI, but negotiation will use simple fallback logic
 
+   **Example `.env` file** (create in the `backend` directory):
+   ```
+   OPENAI_API_KEY=sk-your-key-here
+   OPENROUTER_API_KEY=sk-your-key-here
+   ```
+   Note: You only need to set one of these keys. The system will use OpenAI if `OPENAI_API_KEY` is set, otherwise it will try `OPENROUTER_API_KEY`.
+
 4. Start the FastAPI server:
    ```bash
    uvicorn app.main:app --reload
