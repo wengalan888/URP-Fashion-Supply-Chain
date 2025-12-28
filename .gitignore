@@ -1,0 +1,5 @@
+backend/app/__pycache__/__init__.cpython-313.pyc
+backend/app/__pycache__/main.cpython-313.pyc
+*.pyc
+backend/.env
+.DS_Store
